@@ -1,0 +1,22 @@
+Need to dwonload the llama2 model and save in locally link: https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/blob/main/llama-2-7b-chat.ggmlv3.q8_0.bin
+
+https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/tree/main
+mention the model in model_path  = "\copy the model_path\"
+
+PDF file present in app folder
+
+To test this llama2 model there is two python file 
+1)app.py 
+2)base.py
+
+
+create conda environment with dependency present in requirements.txt file:-
+
+- Open app.py file:- (streamlit UI Interface)
+
+_ Open main.py file (streamlit UI Interface)
+                          	in that there is a two function 
+		1)creation_of_vectorDB_in_local()
+		2)creation_FAQ_chain()
+	First call creation_of_vectorDB_in_local() funtion (It create the embedding and directly save in locally)
+	second call creation_FAQ_chain() function (To train the model set up the langchain with llama2 model )
